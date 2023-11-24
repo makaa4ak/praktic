@@ -91,7 +91,7 @@ width: 400px;
 }
 
 .right-icons .icon {
-  margin-left: 15px; /* Расстояние между иконками */
+  margin-left: 15px; 
 }
 
 
@@ -135,7 +135,7 @@ width: 400px;
 .top-menu .down-menu .text_menu{
   height: 50px;
   align-items: center;
-  text-align: center; /* Добавляем выравнивание по центру для текстового меню */
+  text-align: center; 
 }
 
 .justify-center{
@@ -169,7 +169,7 @@ width: 400px;
 
 
 
-/* Стили для чекбокса, метки и выпадающего меню */
+
 .toggle-menu-checkbox {
   display: none;
   
@@ -189,7 +189,7 @@ width: 400px;
   margin: 0;
   position: absolute;
   background-color: #1b1b1b;
-  top: 50px; /* Положение относительно родительского элемента */
+  top: 50px; 
   right: 30px;
 width: 200px;
 border-radius: 15px;
@@ -197,12 +197,12 @@ height: 310px;
 
 }
 
-/* Показываем выпадающее меню при активном чекбоксе */
+
 .toggle-menu-checkbox:checked + .toggle-menu-label .dropdown-menu {
   display: block;
 }
 
-/* Стили для кнопки пользователя */
+
 .toggle-menu-label img {
   vertical-align: middle;
   margin-right: 8px;
@@ -212,7 +212,7 @@ height: 310px;
  width: 240px;
  height: 30px;
  padding: 15px 0;
-  position: relative; /* Для установки позиционирования */
+  position: relative; 
   left: -40px;
   background-color:#1b1b1b;
   text-align: center; 
@@ -243,29 +243,29 @@ height: 310px;
   width: 100;
   padding: 5px;
 
-  white-space: nowrap; /* Предотвращение переноса строк */
+  white-space: nowrap; 
 }
 
-/* Стили для изображения */
+
 .image-with-text img {
   left: 0;
-  width: 170px; /* Установка ширины изображения */
-  height: 251px; /* Сохранение пропорций */
-  margin-right: 20px; /* Отступ между изображениями */
+  width: 170px; 
+  height: 251px; 
+  margin-right: 20px; 
   transition: opacity 0.3s ease-in-out;
 
 }
 
-/* Изменение прозрачности при наведении курсора */
+
 .image-with-text img:hover {
-  opacity: 0.8; /* Установка прозрачности 80% при наведении */
+  opacity: 0.8; 
 }
 
-/* Стили для текста под изображением */
+
 .image-with-text p {
-  margin-top: 10px; /* Отступ сверху от текста */
-  color: #cecece; /* Цвет текста */
- margin-left:0px ;/* Размер шрифта */
+  margin-top: 10px; 
+  color: #cecece; 
+ margin-left:0px ;
   font-size: 16px; 
 }
 
@@ -394,7 +394,7 @@ a{
   border: 1px solid #1f1f1f;
   padding: 15px;
   text-align: left;
-  margin-bottom: 20px; /* Добавляем отступ между блоками */
+  margin-bottom: 20px; 
 }
 
 .container-mater .content {
@@ -450,8 +450,8 @@ a{
 .collections {
   width: 100%;
  
-  margin: 20px auto; /* Центрирование блока */
-  padding: 20px; /* Отступ внутри блока */
+  margin: 20px auto; 
+  padding: 20px; 
 }
 
 .collections p,
@@ -463,7 +463,7 @@ a{
 
 .content {
   display: flex;
-   /* Отображение блоков в столбец */
+   
 }
 
 .collections .item {
@@ -476,7 +476,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0px; /* Отступ между элементами */
+  margin-top: 0px; 
   
 }
 .item-img {
@@ -494,9 +494,9 @@ a{
   bottom: 0;
   left: 0;
   right: 0;
-  height:70px; /* Изменение высоты затемнения (не в процентах) */
-  width: 100%; /* Установка ширины псевдоэлемента */
-  background: linear-gradient(to bottom,#1f1f1f25, #1f1f1fde); /* Градиент для затемнения */
+  height:70px; 
+  width: 100%; 
+  background: linear-gradient(to bottom,#1f1f1f25, #1f1f1fde); 
 }
 
 .item3-4{
@@ -520,21 +520,21 @@ a{
 
 .menu-3kateg {
   display: flex;
-  justify-content: center; /* Выравниваем по горизонтали по центру */
+  justify-content: center; 
   color: #cecece;
 }
 
-/* Опциональные стили для элементов списка */
+
 .menu-3kateg ul {
-  list-style: none; /* Убираем маркеры списка */
-  padding: 0; /* Убираем внутренние отступы */
-  display: flex; /* Применяем flex для ul */
-  justify-content: center; /* Выравниваем по горизонтали по центру */
+  list-style: none; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
 }
 
 .menu-3kateg li {
   margin-right: 170px;
-   /* Добавляем отступ между элементами */
+
 }
 
 
@@ -556,7 +556,7 @@ a{
 
 .menu-3kateg-img {
   display: block;
-  max-width: 90px; /* Уменьшение максимальной ширины изображения до 50 пикселей */
+  max-width: 90px; 
   margin-right: 20px;
 }
 
@@ -565,28 +565,28 @@ a{
   flex-direction: column;
 }
 
-/* Дополнительные стили по желанию */
+
 .menu-3kateg-info h3 {
   margin: 0;
-  font-size: 18px; /* Размер названия */
+  font-size: 18px; 
   color: #cecece;
 }
 
 .menu-3kateg-info p {
   margin: 0;
-  font-size: 14px; /* Размер даты */
+  font-size: 14px; 
   color: #9b9b9b;
 }
 
 @media screen and (max-width: 900px) {
   .menu-3kateg-img {
     display: block;
-    max-width: 50px; /* Уменьшение максимальной ширины изображения до 50 пикселей */
+    max-width: 50px; 
     margin-right: 10px;
   }
   .menu-3kateg li {
     margin-right: 10px;
-     /* Добавляем отступ между элементами */
+ 
   }
   
   }
@@ -602,15 +602,15 @@ a{
 .menu-2kateg {
   display: flex;
   color: #cecece;
-  max-width: 800px; /* Ширина контейнера */
-  margin: 0 auto; /* Центрирование по горизонтали */
-  padding: 20px; /* Добавление отступов для примера */
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 .menu-2kateg-ubgrade,
 .menu-2kateg-like {
   width: 100%;
-  max-width: 400px; /* Максимальная ширина блоков */
+  max-width: 400px; 
 
 }
 .menu-2kateg-like{
@@ -626,7 +626,7 @@ a{
 
 .menu-2kateg-img {
   display: block;
-  max-width: 90px; /* Уменьшение максимальной ширины изображения */
+  max-width: 90px; 
   margin-right: 20px;
 }
 
