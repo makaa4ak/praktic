@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Информация о книге</title>
+  <link rel="stylesheet" href="search_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <link rel="stylesheet" href="book_css.css">
+</head>
+<body>
+    <div class="zoom-menu">
+        <nav class="top-menu">
+          <div class="left-menu">
+            <a href="index.html"><img src="Logo.png" alt="Логотип"></a>
+            <a href="#" class="text_menu">Каталог</a>
+            <a href="#" class="text_menu">Топы</a>
+            <label for="modal-toggle" id="center-menu" class="text_menu fa-solid fa-magnifying-glass">  Поиск</label>
+            <input type="checkbox" id="modal-toggle" class="hidden">
+            <div class="modal">
+              <div class="modal-content">
+                <label for="modal-toggle" class="close">&times;</label>
+                <input type="text" id="searchInput" placeholder="Введите название книги">
+                <ul id="bookList" class="bookList">
+                  <!-- Здесь будут отображаться результаты поиска -->
+                </ul>
+              </div>
+    
+            </div>
+          </div>
+          <div class="right-icons">
+            <div class="icon"><a  href="#"><i class="fas fa-bookmark"></i></a></div>
+            <div class="icon"><a  href="#"><i class="fas fa-bell"></i></a></div>
+            <input type="checkbox" id="toggle-menu" class="toggle-menu-checkbox">
+            <label for="toggle-menu" class="toggle-menu-label">
+              <span> <div class="icon"><i class="fas fa-user"></i></div></span>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fas fa-money-bill"></i> Валюта сайта</a></li>
+                <li><a href="#"><i class="fas fa-history"></i> История</a></li>
+                <li><a href="#"><i class="fas fa-image"></i> Сменить фон</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Выход</a></li>
+              </ul>
+            </label>
+            
+          </div>
+        </nav>
+      </div>
+    
+    
+    <div calss="justify-center">
+        <nav class="top-menu">
+          <div class="down-menu">
+            <a href="#" class="text_menu">Каталог</a>
+            <a href="#" class="text_menu">Топы</a>
+            <label for="modal-toggle" id="center-menu" class="text_menu">Поиск</label>
+            <input type="checkbox" id="modal-toggle" class="hidden">
+            <div class="modal">
+              <div class="modal-content">
+                <label for="modal-toggle" class="close">&times;</label>
+                <input type="text" placeholder="Поиск">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="book-info" id="bookInfo">
+            <!-- Здесь будет отображаться информация о выбранной книге -->
+          </div>
+        
+          <script src="book_js.js"></script>
+          <script src="books.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.modal-content img {
+    max-width: 45px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+    padding:3px ;
+    border-radius: 150px;
+  }
+  .bookList{
+    list-style-type: none;
+    text-align: start;
+    color:rgb(155, 155, 155);
+    position: absolute;
+  left: 0;
+  }
