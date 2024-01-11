@@ -25,8 +25,7 @@ function showBooks(searchInput) {
 
     // Добавляем обработчик события click для открытия страницы книги
     li.addEventListener('click', function() {
-      const bookId = filteredBooks.findIndex(b => b.title === book.title && b.author === book.author);
-      openBookPage(bookId);
+      openBookPage(book.id); // Передаем id книги для открытия страницы
     });
 
     bookList.appendChild(li);
@@ -41,6 +40,10 @@ function showBooks(searchInput) {
     bookList.appendChild(li);
   }
 }
+
+// Остальной код остается без изменений
+
+
   // Добавляем обработчик события input для поля ввода
   document.getElementById('searchInput').addEventListener('input', function(event) {
     const searchInput = event.target.value.toLowerCase();
