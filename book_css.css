@@ -235,10 +235,52 @@ body {
 
   .book-info{
     display:flex;
-    margin: 50px;
+    margin: 30px 10%;
     color:gray;
+
   }
   .book-info img {
-    width: 200px;
+    width: 280px;
     height: auto;
   }
+
+  .book-info p {
+    margin-left: 20%;
+        padding: 10%;
+        white-space: nowrap;
+  }
+  .book-info h2{
+    white-space: nowrap;
+    padding:10px 10%;
+  }
+  
+
+  .buton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+    justify-content: center;
+    margin-left:13%;
+    
+  }
+  
+  .buton button {
+  border: 0;
+    background-color: #1976d2;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 12px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .buton button:hover {
+    opacity: 0.8; 
+  }
+  
+
+  #imageContainer {
+    width: 1000px;
+    height: 1200px;
+    background-size: cover;
+}

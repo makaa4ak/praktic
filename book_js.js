@@ -7,35 +7,56 @@ const books = [
   { id: 5,title: "Чёрное солнце", author: "BlackSunManga", image: "6tytle/logo.jpg" }
 ];
 
-  
-  
-  function openBookPage(bookId) {
-    const selectedBook = books[bookId];
-    if (selectedBook) {
-      const bookInfoContainer = document.getElementById('bookInfo');
-      bookInfoContainer.innerHTML = ''; // Очищаем содержимое контейнера перед добавлением новой информации
-
-      // Создаем элементы для отображения информации о книге
-      const bookImage = document.createElement('img');
-      bookImage.src = selectedBook.image;
-      bookImage.alt = `${selectedBook.title} cover`;
-   
-   
-      const bookTitle = document.createElement('h2');
-      bookTitle.textContent = selectedBook.title;
-  
-      const bookAuthor = document.createElement('p');
-      bookAuthor.textContent = `Автор: ${selectedBook.author}`;
-  
+function clearBookInfoContainer() {
+  const bookInfoContainer = document.getElementById('bookInfo');
+  bookInfoContainer.innerHTML = '';
+}
 
   
-      // Добавляем созданные элементы в контейнер для отображения информации о книге
-      bookInfoContainer.appendChild(bookImage);
-      bookInfoContainer.appendChild(bookTitle);
-      bookInfoContainer.appendChild(bookAuthor);   
-     }
+function createBookImage(book) {
+  const bookImage = document.createElement('img');
+  bookImage.src = book.image;
+  return bookImage;
+}
+
+
+function createBookTitle(book) {
+  const bookTitle = document.createElement('h2');
+  bookTitle.textContent = book.title;
+  return bookTitle;
+}
+
+function createBookAuthor(book) {
+  const bookAuthor = document.createElement('p');
+  bookAuthor.textContent = `Автор: ${book.author}`;
+  return bookAuthor;
+}
+
+function addElementToContainer(element) {
+  const bookInfoContainer = document.getElementById('bookInfo');
+  bookInfoContainer.appendChild(element);
+}
+
+
+function openBookPage(bookId) {
+  const selectedBook = books[bookId];
+
+  if (selectedBook) {
+    clearBookInfoContainer();
+
+    // Create and add elements individually
+    const bookImage = createBookImage(selectedBook);
+    addElementToContainer(bookImage);
+
+    const bookTitle = createBookTitle(selectedBook);
+    addElementToContainer(bookTitle);
+
+    const bookAuthor = createBookAuthor(selectedBook);
+    addElementToContainer(bookAuthor);
   }
-  
+}
+
+
   // Определение ID книги из URL-адреса страницы
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
@@ -45,3 +66,12 @@ const books = [
     openBookPage(bookId);
   }
   
+
+  document.getElementById('button1').addEventListener('click', function() {
+    // Отримання ID книги з URL або іншим способом
+    
+    const firstPageUrl = ` page.html?id=${bookId}&page=1`;
+
+    // Перенаправлення на сторінку відображення книги
+    window.location.href = firstPageUrl;
+});
